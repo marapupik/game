@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Cars : MonoBehaviour
 {
     
     // Скорость движения
     public float speed = 5f;
 
-    public Transform startPosition;
     // Точка остановки
     public Transform stopPoint;
 
@@ -42,7 +41,7 @@ public class NewBehaviourScript : MonoBehaviour
             objectCount++;
         }
     }
-
+    public Transform startPosition;
     // Обработка коллизий
     private void OnCollisionEnter(Collision collision)
     {
@@ -56,3 +55,4 @@ public class NewBehaviourScript : MonoBehaviour
         speed = 5f;
     }
 }
+
